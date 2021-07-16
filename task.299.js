@@ -10,7 +10,7 @@ const mult = (arr) => {
 
     if (arr[0] >= 0) {
         const min = Math.min(...arr) ** 2;
-        arr = arr.map(value => value * min);
+        arr.map(value => value * min);
 
         console.log(min);
         console.log(arr);
@@ -18,7 +18,7 @@ const mult = (arr) => {
 
     if (arr[0] < 0) {
         const max = arr.sort((a, b) => b - a)[0] ** 2;
-        arr = arr.map(value => value * max);
+        arr.map(value => value * max);
 
         console.log(max);
         console.log(arr);
